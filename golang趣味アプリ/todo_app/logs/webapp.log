@@ -1,0 +1,620 @@
+2023/03/06 04:41:38 main.go:16: test
+2023/03/12 14:59:02 main.go:16: test
+2023/03/12 15:41:02 main.go:16: test1111111111
+2023/03/12 16:19:58 users.go:53: sql: expected 6 destination arguments in Scan, not 5
+2023/03/12 16:22:41 users.go:54: non-existent user [id:1]
+2023/03/12 16:22:41 users.go:57: sql: expected 6 destination arguments in Scan, not 5
+2023/03/14 02:00:42 users.go:57: no such table: users
+2023/03/14 02:01:34 users.go:39: near "updated_at": syntax error
+2023/03/14 02:06:13 users.go:39: near "updated_at": syntax error
+2023/03/14 02:07:47 users.go:37: no such table: users
+2023/03/14 02:08:52 users.go:37: no such table: users
+2023/03/14 02:11:13 users.go:38: 6 values for 5 columns
+2023/03/14 02:12:09 users.go:39: near "updated_at": syntax error
+2023/03/14 02:14:44 users.go:57: sql: no rows in result set
+2023/03/14 02:16:39 users.go:39: near "updated_at": syntax error
+2023/03/14 02:23:49 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:25:20 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:27:17 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:32:48 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:40:11 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:40:54 users.go:59: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:41:46 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:42:36 users.go:56: no such column: id
+2023/03/14 02:44:58 users.go:57: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:45:32 users.go:58: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:49:48 users.go:59: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:50:43 users.go:59: sql: Scan error on column index 0, name "id": destination not a pointer
+2023/03/14 02:51:47 users.go:59: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/03/14 02:53:20 users.go:59: sql: Scan error on column index 5, name "created_at": destination not a pointer
+2023/03/14 03:11:19 users.go:59: sql: no rows in result set
+2023/03/14 22:31:52 todos.go:20: table todos has no column named UserID
+2023/03/14 22:53:49 users.go:59: sql: no rows in result set
+2023/03/14 22:54:48 todos.go:45: near "SLECT": syntax error
+2023/03/14 23:04:22 users.go:59: sql: no rows in result set
+2023/03/19 18:49:24 base.go:66: near "UNUE": syntax error
+2023/03/19 23:15:52 users.go:104: sql: expected 7 destination arguments in Scan, not 6
+2023/03/19 23:38:05 users.go:155: not enough args to execute query: want 2 got 0
+2023/03/21 02:04:49 server.go:3197: http: panic serving [::1]:64012: template: index.html:1: expected :=
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000a20e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c0e0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c0e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97848?, {0x4569380?, 0xc00016c0e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c0e0}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109440?}, {0x4569380, 0xc00016c0e0}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118e60, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:04:50 server.go:3197: http: panic serving [::1]:64013: template: index.html:1: expected :=
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000133a0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c1c0}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c1c0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc00016c1c0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c1c0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096090?}, {0x4569380, 0xc00016c1c0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a000, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:04:50 server.go:3197: http: panic serving [::1]:64022: template: index.html:1: expected :=
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000135c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c2a0}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c2a0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc00016c2a0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c2a0}, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109dd0?}, {0x4569380, 0xc00016c2a0}, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118f00, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:04:53 server.go:3197: http: panic serving [::1]:64023: template: index.html:1: expected :=
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000a2300})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0000e2000}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0000e2000}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97848?, {0x4569380?, 0xc0000e2000?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0000e2000}, 0xc0000a6100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000963c0?}, {0x4569380, 0xc0000e2000}, 0xc0000a6100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a0a0, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:04:53 server.go:3197: http: panic serving [::1]:64036: template: index.html:1: expected :=
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000137d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c380}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c380}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc00016c380?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c380}, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x4569380, 0xc00016c380}, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000208000, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:04:53 server.go:3197: http: panic serving [::1]:64037: template: index.html:1: expected :=
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000139e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c460}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c460}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc00016c460?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c460}, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000969c0?}, {0x4569380, 0xc00016c460}, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a140, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:04:58 server.go:3197: http: panic serving [::1]:64058: template: index.html:1: expected :=
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000013bf0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c540}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c540}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc00016c540?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c540}, 0xc0000a6400)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096a80?}, {0x4569380, 0xc00016c540}, 0xc0000a6400)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a1e0, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:11 server.go:3197: http: panic serving [::1]:64059: template: index.html:1: expected :=
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000a2ad0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0000e2620}, {0x0, 0x0}, {0xc0001879e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0000e2620}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97848?, {0x4569380?, 0xc0000e2620?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0000e2620}, 0xc0000a6e00)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096b40?}, {0x4569380, 0xc0000e2620}, 0xc0000a6e00)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a280, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:11 server.go:3197: http: panic serving [::1]:64068: template: index.html:1: expected :=
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0002183f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0002360e0}, {0x0, 0x0}, {0xc00011f9e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0002360e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc0002360e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0002360e0}, 0xc00015e500)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019baa0?}, {0x4569380, 0xc0002360e0}, 0xc00015e500)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118fa0, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:11 server.go:3197: http: panic serving [::1]:64109: template: index.html:1: expected :=
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000a2ce0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0000e2700}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0000e2700}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc0000e2700?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0000e2700}, 0xc00021e200)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204d20?}, {0x4569380, 0xc0000e2700}, 0xc00021e200)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002080a0, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:12 server.go:3197: http: panic serving [::1]:64118: template: index.html:1: expected :=
+goroutine 60 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000218620})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0002361c0}, {0x0, 0x0}, {0xc00011f9e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0002361c0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc0002361c0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0002361c0}, 0xc00021e300)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204de0?}, {0x4569380, 0xc0002361c0}, 0xc00021e300)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000208140, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:17 server.go:3197: http: panic serving [::1]:64119: template: index.html:1: expected :=
+goroutine 97 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000a2f00})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0000e27e0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0000e27e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97848?, {0x4569380?, 0xc0000e27e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0000e27e0}, 0xc0000a6f00)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000296750?}, {0x4569380, 0xc0000e27e0}, 0xc0000a6f00)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a320, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:17 server.go:3197: http: panic serving [::1]:64136: template: index.html:1: expected :=
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0000a3110})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0000e28c0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0000e28c0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc0000e28c0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0000e28c0}, 0xc00015e800)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019bc20?}, {0x4569380, 0xc0000e28c0}, 0xc00015e800)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000119040, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:17 server.go:3197: http: panic serving [::1]:64137: template: index.html:1: expected :=
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc0001f6060})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c7e0}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c7e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e97758?, {0x4569380?, 0xc00016c7e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c7e0}, 0xc00021e400)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000205440?}, {0x4569380, 0xc00016c7e0}, 0xc00021e400)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002081e0, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:25 server.go:3197: http: panic serving [::1]:64176: template: index.html:1: expected :=
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc00019c1f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0001a0000}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0001a0000}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4f97848?, {0x4569380?, 0xc0001a0000?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0001a0000}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109440?}, {0x4569380, 0xc0001a0000}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118f00, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:55 server.go:3197: http: panic serving [::1]:64177: template: index.html:1: expected :=
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc00019c400})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0001a00e0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0001a00e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4f97758?, {0x4569380?, 0xc0001a00e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0001a00e0}, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109560?}, {0x4569380, 0xc0001a00e0}, 0xc00015e200)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118fa0, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:55 server.go:3197: http: panic serving [::1]:64294: template: index.html:1: expected :=
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc00019c610})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0001a01c0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0001a01c0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4f97848?, {0x4569380?, 0xc0001a01c0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0001a01c0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096090?}, {0x4569380, 0xc0001a01c0}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00009a000, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:05:55 server.go:3197: http: panic serving [::1]:64295: template: index.html:1: expected :=
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000013290})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c0e0}, {0x0, 0x0}, {0xc0001259e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c0e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:21 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4f97848?, {0x4569380?, 0xc00016c0e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c0e0}, 0xc0001fe000)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001870e0?}, {0x4569380, 0xc00016c0e0}, 0xc0001fe000)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001fc000, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:06:50 server.go:3197: http: panic serving [::1]:64521: template: index.html:1: expected :=
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c3e0, 0xc000013280})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c0e0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c0e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:23 +0x171
+net/http.HandlerFunc.ServeHTTP(0x4f97848?, {0x4569380?, 0xc00016c0e0?}, 0x400dba5?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c0e0}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109440?}, {0x4569380, 0xc00016c0e0}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118e60, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:07:50 server.go:3197: http: panic serving [::1]:64761: template: index.html:1: expected :=
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c3e0, 0xc0001a0200})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0001bc000}, {0x0, 0x0}, {0xc00011f9e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0001bc000}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:23 +0x171
+net/http.HandlerFunc.ServeHTTP(0x4f97758?, {0x4569380?, 0xc0001bc000?}, 0x400dba5?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0001bc000}, 0xc0001a2000)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000194090?}, {0x4569380, 0xc0001bc000}, 0xc0001a2000)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000198000, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:08:11 server.go:3197: http: panic serving [::1]:64849: template: index.html:1: expected :=
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c3e0, 0xc000013280})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc00016c0e0}, {0x0, 0x0}, {0xc0001239e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc00016c0e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:23 +0x15b
+net/http.HandlerFunc.ServeHTTP(0x4e97848?, {0x4569380?, 0xc00016c0e0?}, 0x400dbc5?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc00016c0e0}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000109440?}, {0x4569380, 0xc00016c0e0}, 0xc00015e100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000118e60, {0x4569608, 0xc000109350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:09:02 server.go:3197: http: panic serving [::1]:65058: template: index.html:1: expected :=
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000113250})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0001980e0}, {0x0, 0x0}, {0xc00013b9e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0001980e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:22 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e95ff8?, {0x4569380?, 0xc0001980e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0001980e0}, 0xc000182100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115440?}, {0x4569380, 0xc0001980e0}, 0xc000182100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000130f00, {0x4569608, 0xc000115350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:09:03 server.go:3197: http: panic serving [::1]:65059: template: index.html:1: expected :=
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000113470})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0001981c0}, {0x0, 0x0}, {0xc00013b9e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0001981c0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:22 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e95f08?, {0x4569380?, 0xc0001981c0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0001981c0}, 0xc000182200)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115560?}, {0x4569380, 0xc0001981c0}, 0xc000182200)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000130fa0, {0x4569608, 0xc000115350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:09:03 server.go:3197: http: panic serving [::1]:65064: template: index.html:1: expected :=
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000012220})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc000208000}, {0x0, 0x0}, {0xc0001379e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc000208000}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:22 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e95ff8?, {0x4569380?, 0xc000208000?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc000208000}, 0xc000182300)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115b90?}, {0x4569380, 0xc000208000}, 0xc000182300)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000131040, {0x4569608, 0xc000115350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/21 02:09:03 server.go:3197: http: panic serving [::1]:65065: template: index.html:1: expected :=
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x447c440, 0xc000012430})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:25
+todo_app/app/controllers.generateHtml({0x4569380?, 0xc0002080e0}, {0x0, 0x0}, {0xc0001379e0?, 0x3, 0x2dc6430?})
+	/Users/sekineryouichi/todo_app/app/controllers/server.go:16 +0x106
+todo_app/app/controllers.index({0x4569380, 0xc0002080e0}, 0x0?)
+	/Users/sekineryouichi/todo_app/app/controllers/route_main.go:22 +0x111
+net/http.HandlerFunc.ServeHTTP(0x4e95ff8?, {0x4569380?, 0xc0002080e0?}, 0x400dc65?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x4569380, 0xc0002080e0}, 0xc000182400)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c41b0?}, {0x4569380, 0xc0002080e0}, 0xc000182400)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001310e0, {0x4569608, 0xc000115350})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
+2023/03/26 19:37:41 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:42 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:43 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:46 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:46 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:47 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:47 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:54 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:54 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:37:55 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:38:15 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:38:15 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:38:28 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:38:29 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:29 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:30 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:30 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:32 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:34 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:34 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:35 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:39:36 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:19 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:21 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:22 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:23 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:24 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:27 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:29 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:30 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:32 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:33 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
+2023/03/26 19:40:34 server.go:3197: http: superfluous response.WriteHeader call from todo_app/app/controllers.top (route_main.go:12)
