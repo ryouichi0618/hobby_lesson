@@ -9,16 +9,14 @@ import { useState } from 'react';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
-  const [userName, setUserName] = useState('');
-  const userState = {userName: userName, setUserName: setUserName};
 
   return (
     <Router>
-      <Navbar isAuth={isAuth} { ...userState }/>
+      <Navbar isAuth={isAuth}/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/createpost' element={<CreatePost/>}></Route>
-        <Route path='/login' element={<Login setIsAuth={setIsAuth} { ...userState }/>}></Route>
+        <Route path='/login' element={<Login setIsAuth={setIsAuth}/>}></Route>
         <Route path='/logout' element={<Logout setIsAuth={setIsAuth}/>}></Route>
       </Routes>
     </Router>

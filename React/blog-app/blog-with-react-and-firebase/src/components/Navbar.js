@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faFilePen, faArrowRightFromBracket, faUser } from '@fortawesome/free-solid-svg-icons'
+import { auth } from '../firebase';
 
-const Navbar = ({ isAuth, userName }) => {
+const Navbar = ({ isAuth }) => {
   return (
     <nav>
         <Link to='/'>
@@ -25,7 +26,7 @@ const Navbar = ({ isAuth, userName }) => {
         }
         {isAuth && (
         <Link to='#'>
-            <FontAwesomeIcon icon={faUser} />：{userName}
+            <FontAwesomeIcon icon={faUser} />：{auth.currentUser.displayName}
         </Link>
         )}
     </nav>
