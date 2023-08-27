@@ -1,0 +1,59 @@
+.createPostPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.postContainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    padding: 0 40px;
+    gap: 10px;
+
+    border-radius: 5px;
+    -moz-box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    -ms-box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+}
+
+.postContainer h1 {
+    margin: 0;
+}
+
+.postContainer input {
+    width: 100%;
+    height: 30px;
+    padding: 0 7px;
+    outline: none;
+}
+
+.postContainer textarea {
+    width: 100%;
+    height: 120px;
+    padding:7px;
+    outline: none;
+}
+
+.postButton {
+    padding: 10px 0;
+    border: none;
+    background-color: rgba(125, 229, 229, 0.751);
+    border-radius: 5px;
+    cursor: pointer;
+    -moz-box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    -ms-box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    box-shadow: 13px 13px 17px -12px rgba(0, 0, 0, 0.68);
+    transition: all 0.1s;
+}
+
+.postButton:hover {
+    transform: translate(2px);
+    box-shadow: none;
+}
