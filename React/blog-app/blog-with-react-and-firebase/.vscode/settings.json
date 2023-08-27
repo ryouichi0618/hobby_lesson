@@ -1,0 +1,10 @@
+{
+    "intelephense.files.associations": [
+
+        "*.php",
+        "*.phtml"
+    ],
+    "files.associations": {
+        "*.js": "javascriptreact"
+    }
+}
